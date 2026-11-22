@@ -1,0 +1,111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+		A10000000000000000000001 /* TestHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001; };
+		A10000000000000000000002 /* SDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002; };
+		A10000000000000000000003 /* Onshore in Frameworks */ = {isa = PBXBuildFile; productRef = A90000000000000000000001; };
+		A10000000000000000000004 /* Onshore in Frameworks */ = {isa = PBXBuildFile; productRef = A90000000000000000000002; };
+		A20000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHostApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKUITests.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RVTestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000004 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RVTestHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30000000000000000000001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000003); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000002 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000004); runOnlyForDeploymentPostprocessing = 0; };
+		A40000000000000000000001 = {isa = PBXGroup; children = (A40000000000000000000002, A40000000000000000000003, A40000000000000000000004); sourceTree = "<group>"; };
+		A40000000000000000000002 = {isa = PBXGroup; children = (A20000000000000000000001); path = RVTestHost; sourceTree = "<group>"; };
+		A40000000000000000000003 = {isa = PBXGroup; children = (A20000000000000000000002); path = RVTestHostUITests; sourceTree = "<group>"; };
+		A40000000000000000000004 = {isa = PBXGroup; children = (A20000000000000000000003, A20000000000000000000004); name = Products; sourceTree = "<group>"; };
+		A50000000000000000000001 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000000000000000000002;
+			buildPhases = (A60000000000000000000001, A30000000000000000000001, A60000000000000000000003);
+			buildRules = ();
+			dependencies = ();
+			name = RVTestHost;
+			packageProductDependencies = (A90000000000000000000001);
+			productName = RVTestHost;
+			productReference = A20000000000000000000003;
+			productType = "com.apple.product-type.application";
+		};
+		A50000000000000000000002 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000000000000000000003;
+			buildPhases = (A60000000000000000000002, A30000000000000000000002, A60000000000000000000004);
+			buildRules = ();
+			dependencies = (A70000000000000000000002);
+			name = RVTestHostUITests;
+			packageProductDependencies = (A90000000000000000000002);
+			productName = RVTestHostUITests;
+			productReference = A20000000000000000000004;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A60000000000000000000001 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001); runOnlyForDeploymentPostprocessing = 0; };
+		A60000000000000000000002 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000002); runOnlyForDeploymentPostprocessing = 0; };
+		A60000000000000000000003 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A60000000000000000000004 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A70000000000000000000001 = {isa = PBXContainerItemProxy; containerPortal = A00000000000000000000001; proxyType = 1; remoteGlobalIDString = A50000000000000000000001; remoteInfo = RVTestHost; };
+		A70000000000000000000002 = {isa = PBXTargetDependency; target = A50000000000000000000001; targetProxy = A70000000000000000000001; };
+		A80000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (A80000000000000000000011); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		A80000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (A80000000000000000000012); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		A80000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (A80000000000000000000013); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		A80000000000000000000011 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A80000000000000000000012 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ng.onshore.testhost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A80000000000000000000013 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ng.onshore.testhost.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RVTestHost;
+			};
+			name = Debug;
+		};
+		A90000000000000000000001 = {isa = XCSwiftPackageProductDependency; productName = Onshore; };
+		A90000000000000000000002 = {isa = XCSwiftPackageProductDependency; productName = Onshore; };
+		A90000000000000000000003 = {isa = XCLocalSwiftPackageReference; relativePath = ..; };
+		A00000000000000000000001 = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2600; };
+			buildConfigurationList = A80000000000000000000001;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = A40000000000000000000001;
+			packageReferences = (A90000000000000000000003);
+			productRefGroup = A40000000000000000000004;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A50000000000000000000001, A50000000000000000000002);
+		};
+	};
+	rootObject = A00000000000000000000001;
+}
